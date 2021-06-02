@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Panico App</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="icon" type="image/png" href="imagen/panic.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <link rel="stylesheet" href="css/dis.css" type="text/css" media="screen, projection">
+  <body>
+    <header>
+      <div class="row">
+        <div class="col s12 m12 l12" id="dd">
+          <center><h3 class="white-text">APP de Pánico</h3></center>
+        </div>
+      </div>
+    </header>
+
+    <center><img src="imagen/panicB.jpeg" alt=""></center>
+
+    <div class="fixed-action-btn reds">
+        <a class="btn-floating btn-large">
+          <i class="large material-icons notranslate">help</i>
+        </a>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send?phone=573204267065" class="btn-floating" id="whatsapp" target="_blank"></a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="row">
+      <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+        <h4 class="white-text">Cómo funciona?</h4>
+        <p class="white-text">La aplicación permite que el usuario pueda llamar rápidamente a una persona y/o enviar un mensaje de texto con la ubicación en
+          coordenadas sin la necesidad estar conectado a internet.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+        <h4 class="white-text">Para que sirve?</h4>
+        <p class="white-text">Se planteó como lo dice el título, para momentos de pánico, donde una persona de cualquier edad, este estraviada en lugar
+          desconocido para el, pueda comunicarse rápidamente con un familiar o conocido para asi poder informarle su ubicación y poder ubicarse de nuevo,
+          por otro lado puede servir para que los seres queridos de la persona, puedan conocer el lugar exacto donde se encuentra.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+         <div class="col s12 m12 l12"></div>
+         <div class="col s12 m5 offset-m1 l5 offset-l1">
+           <div class="card co">
+             <div class="card-image waves-effect waves-block waves-light">
+               <img class="activator" src="imagen/llamada.jpg">
+               <span class="card-title activator">Llamada (click)</span>
+             </div>
+             <div class="card-reveal black">
+               <span class="card-title white-text">Llamada<i class="material-icons right notranslate">close</i></span>
+               <p class="white-text">En este caso, la aplicación deja llamar a tres diferentes contactos, los cuales pueden ser modificidas en cualquier momento, por supuesto, estas llamadas
+                 consumen saldo del celular, de lo contrario, no se podra hacer correctamente la llamada.</p>
+             </div>
+           </div>
+         </div>
+
+         <div class="col s12 m5 l5">
+           <div class="card co">
+             <div class="card-image waves-effect waves-block waves-light">
+               <img class="activator" src="imagen/mensaje.jpg">
+               <span class="card-title activator">Mensaje de texto (click)</span>
+             </div>
+             <div class="card-reveal black">
+               <span class="card-title white-text">Mensaje de texto<i class="material-icons right notranslate">close</i></span>
+               <p class="white-text">En este caso, la applicación permite enviar mensajes de texto a tres contactos diferentes, en donde estos contactos se pueden cambiar por otros en cualquier momentos.
+                 Se debe tener en cuenta que al enviar un mensaje de texto, es necesario tener saldo en el celular, de lo contrario, el mensaje no se podrá enviar correctamente.</p>
+             </div>
+           </div>
+         </div>
+       </div>
+
+    <div class="row">
+       <div class="col s10 offset-s1 m8 l8 offset-m2 offset-l2" id="ccol1">
+        <ul class="ccdi">
+          <center><h3 class="white-text">Funcionamiento</h3></center>
+        </ul>
+      </div>
+    </div>
+    <center><li class="pt"><iframe src="imagen/Video.mp4"></iframe></i></center>
+
+    <div class="row">
+      <div class="col s12 m12 l12">
+         <center><div class="white-text pad"><h4>Descargar aplicación</h4></div></center>
+         <div class="col s6 m4 l2 offset-s3 offset-m4 offset-l5" id="c1">
+           <a href="https://drive.google.com/file/d/1U0EdsPwMp1zvCpkL-WLvYC4JG5aXUwRW/view?usp=sharing" target="_blank">
+             <center><button class="button button-big button-gray" id="windows_download32"><i class="small material-icons notranslate left">window</i>Panic_App</button></center>
+           </a>
+         </div>
+       </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+    <script type="text/javascript" src="Js/fileName.json"></script>
+    <script type="text/javascript" type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+          direction: 'up',
+          hoverEnabled: false
+        });
+      });
+    </script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCZL2ANjG1PHwmxZxgQ8OJJRXnTCehcU88",
+        authDomain: "jjll-65171.firebaseapp.com",
+        databaseURL: "https://jjll-65171.firebaseio.com",
+        projectId: "jjll-65171",
+        storageBucket: "jjll-65171.appspot.com",
+        messagingSenderId: "122055514183",
+        appId: "1:122055514183:web:0cf756ddf9621125c7f962",
+        measurementId: "G-0QYHB32MPR"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>
